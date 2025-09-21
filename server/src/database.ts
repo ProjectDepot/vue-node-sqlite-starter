@@ -6,7 +6,6 @@ export function getDb(): Database.Database {
 	if (!db) {
 		db = new Database('todos.db');
 
-		// Create tables
 		db.exec(`
       CREATE TABLE IF NOT EXISTS todos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,

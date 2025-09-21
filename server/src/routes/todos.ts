@@ -2,7 +2,6 @@ import { Router, Request, Response } from 'express';
 import { getDb } from '../database.js';
 import { ApiResponse, TodoItem } from '~/types';
 
-// Get database instance
 const db = getDb();
 
 function getAllTodos(req: Request, res: Response<ApiResponse<TodoItem[]>>) {
