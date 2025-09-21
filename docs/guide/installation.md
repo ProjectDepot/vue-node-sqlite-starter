@@ -2,7 +2,7 @@
 
 ## System Requirements
 
-- Node.js 18+
+- Node.js 20+
 - npm or yarn
 
 ## Clone and Setup
