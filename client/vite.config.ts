@@ -12,6 +12,10 @@ export default defineConfig({
 			'~': resolve(__dirname, '../shared/src'),
 		},
 	},
+	build: {
+		outDir: '../dist/client/',
+		emptyOutDir: true,
+	},
 	server: {
 		port: 3000,
 		proxy: {

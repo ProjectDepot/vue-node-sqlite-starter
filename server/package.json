@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "node --loader ts-node/esm src/index.ts",
-    "build": "tsc && esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:@types/node",
-    "start": "node dist/index.js"
+    "build": "tsc && esbuild src/index.ts --bundle --platform=node --outfile=../dist/server/index.js --external:@types/node --external:better-sqlite3 --external:express --external:cors",
+    "start": "node ../dist/server/index.js"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
