@@ -124,7 +124,8 @@ onMounted(() => {
 									'text-gray-900': !todo.completed
 								}"> {{ todo.title }} </h3>
 								<p v-if="todo.description" class="text-gray-600 text-sm"> {{ todo.description }} </p>
-								<p class="text-xs text-gray-400 mt-1"> Created: {{ new Date(todo.createdAt).toLocaleDateString() }} </p>
+								<p class="text-xs text-gray-400 mt-1"> Created: {{ new Date(todo.created_at).toLocaleDateString() }}
+								</p>
 							</div>
 						</div>
 						<button @click="deleteTodo(todo.id)" class="text-red-600 hover:text-red-800 p-1" title="Delete todo">
