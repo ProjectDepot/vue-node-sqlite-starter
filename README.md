@@ -14,6 +14,18 @@ A modern full-stack todo application built with Vue 3, Node.js, TypeScript, and 
 - **Monorepo**: Managed with npm workspaces
 - **Type Safety**: TypeScript support across all layers with a `/shared/` folder
 
+## 📚 Documentation
+
+Documentation site is available, built with [Vitepress](https://vitepress.dev/).
+
+- **Local Development**: `npm run docs:dev` (opens at <http://localhost:5174>)
+- **Production Build**: `npm run docs:build`
+
+There's a GitHub Actions workflow included which allows manually building and deploying the site to GitHub Pages.
+
+> [!NOTE]
+> See `/.github/workflows/docs.yml` for an example to enable automatic builds.
+
 ## 📁 Project Structure
 
 ```text
@@ -36,6 +48,10 @@ vue-node-starter/
 │   │   ├── types.ts        # Shared TypeScript interfaces
 │   │   └── index.ts
 │   └── package.json
+├── docs/                   # Documentation site (VitePress)
+│   ├── .vitepress/
+│   │   └── config.mts      # VitePress configuration
+│   ├── index.md            # Documentation homepage
 ├── package.json           # Root workspace configuration
 └── README.md
 ```
@@ -88,6 +104,12 @@ vue-node-starter/
 - `npm run install:all` - Install dependencies for all workspaces
 - `npm run clean` - Clean build artifacts
 - **`npm start`** - Start the production server
+
+#### Documentation
+
+- `npm run docs:dev` - Start VitePress development server
+- `npm run docs:build` - Build documentation for production
+- `npm run docs:preview` - Preview production build locally
 
 ## 🔧 Configuration
 

@@ -13,7 +13,10 @@
     "build:shared": "npm run build --workspace=shared",
     "install:all": "npm install && npm install --workspaces",
     "clean": "npm run clean --workspaces",
-    "start": "npm run start --workspace=server"
+    "start": "npm run start --workspace=server",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "author": "",
   "license": "MIT",
@@ -23,6 +26,7 @@
     "shared"
   ],
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vitepress": "^1.6.4"
   }
 }
