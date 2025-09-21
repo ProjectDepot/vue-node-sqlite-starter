@@ -42,12 +42,12 @@ npm run dev
 
 The application will be available at:
 
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:4000
+- **Frontend**: <http://localhost:3000>
+- **Backend API**: <http://localhost:4000>
 
 ## Project Structure
 
-```
+```text
 vue-node-starter/
 ├── client/          # Vue 3 frontend
 ├── server/          # Node.js backend

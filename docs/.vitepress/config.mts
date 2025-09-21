@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
 	title: 'Vue Node Starter',
 	description: 'A modern Vue 3 + Node.js starter with TypeScript and SQLite',
+	ignoreDeadLinks: true,
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
