@@ -2,6 +2,10 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+	// Update this value to match where you're hosting your docs.
+	// below would work for e.g. https://username.github.io/vue-node-starter/
+	base: '/vue-node-starter/',
+
 	title: 'Vue Node Starter',
 	description: 'A modern Vue 3 + Node.js starter with TypeScript and SQLite',
 	ignoreDeadLinks: [/^https?:\/\/localhost/],

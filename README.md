@@ -25,7 +25,7 @@ There's a GitHub Actions workflow included which allows manually building and de
 
 > [!NOTE]
 > See `/.github/workflows/docs.yml` for an example to enable automatic builds.
-> Don't forget to enable the GitHub Pages site in your repo's **Settings** -> **Pages**.
+> Don't forget to enable the GitHub Pages site in your repo's **Settings** -> **Pages** -> **Branch = `gh-pages`** -> **Save**.
 
 ## 📁 Project Structure
 
