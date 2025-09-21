@@ -1,0 +1,28 @@
+{
+  "name": "vue-node-starter",
+  "version": "1.0.0",
+  "description": "Vue 3 + Node.js starter with TypeScript and SQLite",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build": "npm run build --workspaces",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "build:shared": "npm run build --workspace=shared",
+    "install:all": "npm install && npm install --workspaces",
+    "clean": "npm run clean --workspaces",
+    "start": "npm run start --workspace=server"
+  },
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
