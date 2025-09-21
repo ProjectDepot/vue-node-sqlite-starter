@@ -2,11 +2,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: Vue Node Starter
+title: Vue Node SQLite Starter
 titleTemplate: A Modern Vue 3 + Node.js Starter
 
 hero:
-  name: 'Vue Node Starter'
+  name: 'Vue Node SQLite Starter'
   text: 'A modern Vue 3 + Node.js starter with TypeScript and SQLite'
   tagline: Get started building full-stack applications with modern tooling
   actions:
@@ -15,7 +15,7 @@ hero:
       link: /#quick-start
     - theme: alt
       text: View on GitHub
-      link: https://github.com/parsehex/vue-node-starter
+      link: https://github.com/ProjectDepot/vue-node-sqlite-starter
 
 features:
   - title: Vue 3 + TypeScript
@@ -30,8 +30,8 @@ features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/parsehex/vue-node-starter.git
-cd vue-node-starter
+git clone https://github.com/ProjectDepot/vue-node-sqlite-starter.git
+cd vue-node-sqlite-starter
 
 # Install dependencies
 npm install
@@ -48,7 +48,7 @@ The application will be available at:
 ## Project Structure
 
 ```text
-vue-node-starter/
+vue-node-sqlite-starter/
 ├── client/          # Vue 3 frontend
 ├── server/          # Node.js backend
 ├── shared/          # Shared types and utilities

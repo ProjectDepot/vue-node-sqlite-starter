@@ -1,4 +1,4 @@
-# Vue Node Starter
+# Vue Node SQLite Starter
 
 A modern full-stack todo application built with Vue 3, Node.js, TypeScript, and SQLite. This project serves as a starter template for building full-stack web applications with a clean separation of concerns and modern development practices.
 
@@ -26,11 +26,12 @@ There's a GitHub Actions workflow included which allows manually building and de
 > [!NOTE]
 > See `/.github/workflows/docs.yml` for an example to enable automatic builds.
 > Don't forget to enable the GitHub Pages site in your repo's **Settings** -> **Pages** -> **Branch = `gh-pages`** -> **Save**.
+> Finally, update the config at `/docs/.vitepress/config.mts`
 
 ## 📁 Project Structure
 
 ```text
-vue-node-starter/
+vue-node-sqlite-starter/
 ├── client/                 # Vue 3 frontend
 │   ├── src/
 │   │   ├── components/     # Vue components
@@ -69,7 +70,7 @@ vue-node-starter/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/parsehex/vue-node-starter
+   git clone https://github.com/ProjectDepot/vue-node-sqlite-starter
    cd vue-node-starter
    ```
 

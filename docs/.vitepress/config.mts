@@ -3,10 +3,10 @@ import { defineConfig } from 'vitepress';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	// Update this value to match where you're hosting your docs.
-	// below would work for e.g. https://username.github.io/vue-node-starter/
-	base: '/vue-node-starter/',
+	// below would work for e.g. https://username.github.io/vue-node-sqlite-starter/
+	base: '/vue-node-sqlite-starter/',
 
-	title: 'Vue Node Starter',
+	title: 'Vue Node SQLite Starter',
 	description: 'A modern Vue 3 + Node.js starter with TypeScript and SQLite',
 	ignoreDeadLinks: [/^https?:\/\/localhost/],
 	themeConfig: {
@@ -29,13 +29,13 @@ export default defineConfig({
 		socialLinks: [
 			{
 				icon: 'github',
-				link: 'https://github.com/parsehex/vue-node-starter',
+				link: 'https://github.com/ProjectDepot/vue-node-sqlite-starter',
 			},
 		],
 
 		footer: {
 			message:
-				'Released under the <a href="https://github.com/parsehex/vue-node-starter/blob/main/LICENSE">MIT License</a>.',
+				'Released under the <a href="https://github.com/ProjectDepot/vue-node-sqlite-starter/blob/main/LICENSE">MIT License</a>.',
 			copyright: 'Copyright © 2025-present parsehex',
 		},
 	},
