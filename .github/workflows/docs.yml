@@ -1,12 +1,11 @@
 name: Deploy Documentation
 
 on:
-  # Uncomment the following lines to enable automatic builds on docs changes
-  # push:
-  #   paths:
-  #     - 'docs/**'
-  #   branches: [ main ]
-  workflow_dispatch: # enables manual builds
+  push:
+    paths:
+      - 'docs/**'
+    branches: [main]
+  workflow_dispatch: # This allows manually building
 
 jobs:
   deploy:

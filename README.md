@@ -14,50 +14,6 @@ A modern full-stack todo application built with Vue 3, Node.js, TypeScript, and 
 - **Monorepo**: Managed with npm workspaces
 - **Type Safety**: TypeScript support across all layers with a `/shared/` folder
 
-## 📚 Documentation
-
-Documentation site is available, built with [Vitepress](https://vitepress.dev/).
-
-- **Local Development**: `npm run docs:dev` (opens at <http://localhost:5174>)
-- **Production Build**: `npm run docs:build`
-
-There's a GitHub Actions workflow included which allows manually building and deploying the site to GitHub Pages.
-
-> [!NOTE]
-> See `/.github/workflows/docs.yml` for an example to enable automatic builds.
-> Don't forget to enable the GitHub Pages site in your repo's **Settings** -> **Pages** -> **Branch = `gh-pages`** -> **Save**.
-> Finally, update the config at `/docs/.vitepress/config.mts`
-
-## 📁 Project Structure
-
-```text
-vue-node-sqlite-starter/
-├── client/                 # Vue 3 frontend
-│   ├── src/
-│   │   ├── components/     # Vue components
-│   │   ├── App.vue
-│   │   └── main.ts
-│   ├── package.json
-│   └── vite.config.ts
-├── server/                 # Node.js backend
-│   ├── src/
-│   │   ├── routes/         # API routes
-│   │   ├── database.ts     # SQLite setup
-│   │   └── index.ts        # Server entry point
-│   └── package.json
-├── shared/                 # Shared code and types
-│   ├── src/
-│   │   ├── types.ts        # Shared TypeScript interfaces
-│   │   └── index.ts
-│   └── package.json
-├── docs/                   # Documentation site (VitePress)
-│   ├── .vitepress/
-│   │   └── config.mts      # VitePress configuration
-│   ├── index.md            # Documentation homepage
-├── package.json           # Root workspace configuration
-└── README.md
-```
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -91,6 +47,43 @@ vue-node-sqlite-starter/
    - Frontend: <http://localhost:3000>
    - Backend: <http://localhost:4000>
    - API: <http://localhost:4000/api/todos>
+
+### 📚 Documentation
+
+A documentation site is available, built with [Vitepress](https://vitepress.dev/).
+
+- **Local Development**: `npm run docs:dev` (opens at <http://localhost:5174>)
+- **Production Build**: `npm run docs:build`
+
+## 📁 Project Structure
+
+```text
+vue-node-sqlite-starter/
+├── client/                 # Vue 3 frontend
+│   ├── src/
+│   │   ├── components/     # Vue components
+│   │   ├── App.vue
+│   │   └── main.ts
+│   ├── package.json
+│   └── vite.config.ts
+├── server/                 # Node.js backend
+│   ├── src/
+│   │   ├── routes/         # API routes
+│   │   ├── database.ts     # SQLite setup
+│   │   └── index.ts        # Server entry point
+│   └── package.json
+├── shared/                 # Shared code and types
+│   ├── src/
+│   │   ├── types.ts        # Shared TypeScript interfaces
+│   │   └── index.ts
+│   └── package.json
+├── docs/                   # Documentation site (VitePress)
+│   ├── .vitepress/
+│   │   └── config.mts      # VitePress configuration
+│   ├── index.md            # Documentation homepage
+├── package.json           # Root workspace configuration
+└── README.md
+```
 
 ### Available Scripts
 
